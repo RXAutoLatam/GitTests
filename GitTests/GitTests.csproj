@@ -158,11 +158,11 @@
     <Compile Include="Actions\CheckOut.cs">
       <DependentUpon>CheckOut.rxrec</DependentUpon>
       <id>c8008376-d130-4dc7-a171-e422de59b384</id>
-      <BoundTo>0cd9efb1-f01a-4bd4-8949-274fe2f02604</BoundTo>
+      <BoundTo>d315239e-c359-4af8-93a8-d21a161d4df2</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
     <Compile Include="Actions\CheckOut.UserCode.cs">
-      <BoundTo>0cd9efb1-f01a-4bd4-8949-274fe2f02604</BoundTo>
+      <BoundTo>d315239e-c359-4af8-93a8-d21a161d4df2</BoundTo>
       <DependentUpon>CheckOut.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>bab42b62-7911-4b8b-a016-94aace2fe867</id>
