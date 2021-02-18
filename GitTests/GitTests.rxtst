@@ -50,12 +50,14 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="c60564d0-f99a-47dd-b2c2-a8ec291fde79"
 			name="CloseBrowser"
 			ref="df1b8bc1-e408-48c2-81fe-a3915d401cec"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="c6be2c87-16c5-45f3-8670-e76316b6f142"
 			name="OpenBrowser"
 			ref="465056a3-a124-4e7d-8bd1-7b68cae8d31e"
