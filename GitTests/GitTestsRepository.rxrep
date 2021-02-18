@@ -1,0 +1,177 @@
+﻿<repository
+id="bff7c9c8-5d4c-4a9c-a75b-0d35078496da"
+name="GitTestsRepository">
+	<codegen
+	classname="GitTestsRepository"
+	namespace="GitTests">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="61ac5756-b44b-4a5c-b88c-9a277bbc6bb0"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="68069c15-dbde-40a8-b599-f6d9492db5c5"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="ce62a708-03fe-4211-8645-182efb2cdc98"
+			name="lbl_YourStore"
+			refimgid="7d993cc7-593d-4e90-903a-191802999b6f"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//div[#'logo']//a[@innertext='Your Store']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="937a78d5-fad4-4b84-a4e3-de1eaed764a4"
+			name="cbo_Currency"
+			refimgid="4d5993c3-55f3-4c02-b881-f304862536b2"
+			refpath="/dom[@domain='demo.opencart.com']//form[#'form-currency']/div/button/span[@innertext='Currency']"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//form[#'form-currency']//span[@innertext='Currency']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="d9a1f4bb-e455-49bb-bfe4-e04a87edc48f"
+			name="btn_USDollar"
+			refimgid="cb628497-d29b-4146-a672-3d45fbc3b8a5"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//form[#'form-currency']//button[@innertext='$ US Dollar']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="cf781813-8767-4d15-a987-52b035ee2beb"
+			name="btn_Cart"
+			refimgid="9196b51f-721b-4960-a7ee-feb0c0dcbe33"
+			refpath="/dom[@domain='demo.opencart.com']//button[#'button-cart']"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//button[#'button-cart']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="59e638a2-1abb-4b7b-a71e-29dd75a0bc23"
+			name="msg_SuccessAdded"
+			refimgid="9299f4cb-30b2-4a0d-b7cc-2327e3d2e977"
+			refpath="/dom[@domain='demo.opencart.com']//div[#'product-product']/div[@innertext='Success: You have added  to your !']"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//div[#'product-product']/div[@innertext&gt;'Success: You have added  to']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="23f26f8d-9f0e-4b35-ae86-61ba42ae9db8"
+			name="lnk_CartTotal"
+			refimgid="8cb676ef-efe7-491a-82db-ccb4d2de5092"
+			refpath="/dom[@domain='demo.opencart.com']//span[#'cart-total']"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//span[#'cart-total']
+			</item>
+			<item
+			addcaps="unknown,webelement,strongtag"
+			capname="strongtag"
+			id="8968e7f2-6cbf-4c0d-b6f6-ecc4b6e49a42"
+			name="StrongTagCheckout"
+			refimgid="d46508b4-d45a-4bf4-8466-7766c0a83088"
+			refpath="/dom[@domain='demo.opencart.com']//div[#'cart']/ul/li[2]/div/p/a[2]/strong[@innertext=' Checkout']"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//div[#'cart']//strong[@innertext=' Checkout']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="0ae983a3-a007-48b4-a6a2-b27a661b9a98"
+			isrooted="True"
+			name="Content"
+			refpath="/dom[@domain='demo.opencart.com']//div[#'content']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="7d517cd0-2b9c-4e45-91f8-2a0644d1e5e3"
+				name="btn_Checkout"
+				refimgid="ec6004a3-55b4-40f6-af1b-7739d7586d35"
+				refpath="/dom[@domain='demo.opencart.com']//div[#'content']/div[3]/div[2]/a[@innertext='Checkout']"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div[#'content']//a[@innertext='Checkout']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="2288231b-5d59-4420-a9ea-b2fdc1ebe127"
+				name="lnk_MacBook"
+				refimgid="21174aef-179e-4b60-ad69-137e83426c91"
+				refpath="/dom[@domain='demo.opencart.com']//div[#'content']/div[2]/div[1]/div/div[2]/h4/a[@innertext='MacBook']"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div[#'content']//a[@innertext='MacBook']
+				</item>
+				<item
+				addcaps="unknown,webelement,h2tag"
+				capname="h2tag"
+				id="cca714b0-829c-4e19-b693-6be3fdba7fe1"
+				name="lbl_Precio"
+				refimgid="7b081891-05bf-4f80-9088-4a263881de31"
+				refpath="/dom[@domain='demo.opencart.com']//div[#'content']/div/div[2]/ul[2]/li[1]/h2[@innertext='$602.00']"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div[#'content']//h2[@innertext='$602.00']
+				</item>
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="9259bb08-2344-4747-815a-d67371f3e67a"
+				name="lbl_ShoppingCart1000kg"
+				refimgid="e77a1c11-4b80-4052-8bca-f18e6c852778"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div[#'content']/h1[@innertext~'Shopping Cart']
+				</item>
+				<basepath>
+					/dom[@domain='demo.opencart.com']//div[#'content']
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="e01b5452-8961-40e6-bb2c-74397dee8ee9"
+			name="lnk_Checkout"
+			refimgid="6c793a12-64ce-4e3f-8da2-69f9ffa265a3"
+			refpath="/dom[@domain='demo.opencart.com']//div[#'top-links']/ul/li[5]/a[@title='Checkout']/span[@innertext='Checkout']"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//div[#'top-links']//span[@innertext='Checkout']
+			</item>
+			<basepath>
+				/dom[@domain='demo.opencart.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
