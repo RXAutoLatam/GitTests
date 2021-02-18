@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="df1b8bc1-e408-48c2-81fe-a3915d401cec"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="GitTests.GeneralScript">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="5633207e-c14d-42cc-bf7f-18f836d014e4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="68069c15-dbde-40a8-b599-f6d9492db5c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="bff7c9c8-5d4c-4a9c-a75b-0d35078496da"
+	name="GitTestsRepository"
+	relativepath="..\GitTestsRepository.rxrep">
+		<codegen
+		classname="GitTestsRepository"
+		namespace="GitTests">
+		</codegen>
+		<rootfolder
+		id="61ac5756-b44b-4a5c-b88c-9a277bbc6bb0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace GitTests
+namespace GitTests.GeneralScripts
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace GitTests
     public partial class OpenBrowser : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the GitTestsRepository repository.
+        /// Holds an instance of the global::GitTests.GitTestsRepository repository.
         /// </summary>
-        public static GitTestsRepository repo = GitTestsRepository.Instance;
+        public static global::GitTests.GitTestsRepository repo = global::GitTests.GitTestsRepository.Instance;
 
         static OpenBrowser instance = new OpenBrowser();
 

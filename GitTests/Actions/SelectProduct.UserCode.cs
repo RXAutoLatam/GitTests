@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace GitTests
+namespace GitTests.Actions
 {
-    public partial class CloseBrowser
+    public partial class SelectProduct
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

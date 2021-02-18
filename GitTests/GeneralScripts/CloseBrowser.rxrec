@@ -20,7 +20,7 @@ mode="Desktop">
 	</useDefaultItemLogging>
 	<codegen
 	classname="CloseBrowser"
-	namespace="GitTests">
+	namespace="GitTests.GeneralScripts">
 	</codegen>
 	<variables>
 	</variables>
@@ -47,7 +47,7 @@ mode="Desktop">
 	<repository
 	id="bff7c9c8-5d4c-4a9c-a75b-0d35078496da"
 	name="GitTestsRepository"
-	relativepath="GitTestsRepository.rxrep">
+	relativepath="..\GitTestsRepository.rxrep">
 		<codegen
 		classname="GitTestsRepository"
 		namespace="GitTests">
