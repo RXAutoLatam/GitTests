@@ -24,29 +24,29 @@ namespace GitTests.Actions
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AddToCart recording.
+    ///The CheckOut recording.
     /// </summary>
-    [TestModule("7ac8ab88-3ac9-4375-b575-33bcc5618181", ModuleType.Recording, 1)]
-    public partial class AddToCart : ITestModule
+    [TestModule("ba284c26-30ba-4ea1-82e4-7d88229ff31a", ModuleType.Recording, 1)]
+    public partial class CheckOut : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::GitTests.GitTestsRepository repository.
         /// </summary>
         public static global::GitTests.GitTestsRepository repo = global::GitTests.GitTestsRepository.Instance;
 
-        static AddToCart instance = new AddToCart();
+        static CheckOut instance = new CheckOut();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AddToCart()
+        public CheckOut()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AddToCart Instance
+        public static CheckOut Instance
         {
             get { return instance; }
         }
@@ -79,16 +79,15 @@ namespace GitTests.Actions
 
             Init();
 
-            // ===== Add 2 Cart =====
-            Report.Log(ReportLevel.Info, "Section", "===== Add 2 Cart =====", new RecordItemIndex(0));
+            // ===== Check Out ====
+            Report.Log(ReportLevel.Info, "Section", "===== Check Out ====", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.btn_Cart' at 134;25.", repo.ApplicationUnderTest.btn_CartInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.btn_Cart.Click("134;25");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.lnk_Checkout' at Center.", repo.ApplicationUnderTest.lnk_CheckoutInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.lnk_Checkout.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Success: You have added  to your !') on item 'ApplicationUnderTest.msg_SuccessAdded'.", repo.ApplicationUnderTest.msg_SuccessAddedInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.ApplicationUnderTest.msg_SuccessAddedInfo, "InnerText", "Success: You have added  to your !");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ApplicationUnderTest.lnk_Checkout'", repo.ApplicationUnderTest.lnk_CheckoutInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.ApplicationUnderTest.lnk_CheckoutInfo.WaitForExists(30000);
             
         }
 
