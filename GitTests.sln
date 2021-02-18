@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitTests", "GitTests\GitTests.csproj", "{D7FE3DB8-37D0-441B-A8ED-BB6DD1F811E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranorex Automation Helpers", "RanorexAutomationHelpers\Ranorex Automation Helpers.csproj", "{5FDCD7A5-04A7-4DE1-97E4-81D15B07C6C4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -23,9 +21,5 @@ Global
 		{D7FE3DB8-37D0-441B-A8ED-BB6DD1F811E7}.Debug|x86.ActiveCfg = Debug|x86
 		{D7FE3DB8-37D0-441B-A8ED-BB6DD1F811E7}.Release|x86.Build.0 = Release|x86
 		{D7FE3DB8-37D0-441B-A8ED-BB6DD1F811E7}.Release|x86.ActiveCfg = Release|x86
-		{5FDCD7A5-04A7-4DE1-97E4-81D15B07C6C4}.Debug|x86.Build.0 = Debug|x86
-		{5FDCD7A5-04A7-4DE1-97E4-81D15B07C6C4}.Debug|x86.ActiveCfg = Debug|x86
-		{5FDCD7A5-04A7-4DE1-97E4-81D15B07C6C4}.Release|x86.Build.0 = Release|x86
-		{5FDCD7A5-04A7-4DE1-97E4-81D15B07C6C4}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 EndGlobal
