@@ -149,6 +149,18 @@
       <id>25860cd4-5153-409b-9d37-b8c86f2c595b</id>
       <BoundTo>aae5a7e2-bdbe-4a3e-bf69-c37e23975e75</BoundTo>
     </Compile>
+    <Compile Include="Actions\CheckOut.cs">
+      <BoundTo>d315239e-c359-4af8-93a8-d21a161d4df2</BoundTo>
+      <DependentUpon>CheckOut.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11eb9cde-d52f-47e7-987e-f92ab8747313</id>
+    </Compile>
+    <Compile Include="Actions\CheckOut.UserCode.cs">
+      <BoundTo>d315239e-c359-4af8-93a8-d21a161d4df2</BoundTo>
+      <DependentUpon>CheckOut.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b8c9eaad-64b4-4312-ac73-f8bfb58e823d</id>
+    </Compile>
     <Compile Include="Actions\CheckPageLoad.cs">
       <DependentUpon>CheckPageLoad.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -227,6 +239,11 @@
       <BoundTo>894c81d9-5a51-4815-87c0-3ea13c3526ca</BoundTo>
       <id>aae5a7e2-bdbe-4a3e-bf69-c37e23975e75</id>
       <recordtableid>7ac8ab88-3ac9-4375-b575-33bcc5618181</recordtableid>
+    </None>
+    <None Include="Actions\CheckOut.rxrec">
+      <BoundTo>894c81d9-5a51-4815-87c0-3ea13c3526ca</BoundTo>
+      <id>d315239e-c359-4af8-93a8-d21a161d4df2</id>
+      <recordtableid>ba284c26-30ba-4ea1-82e4-7d88229ff31a</recordtableid>
     </None>
     <None Include="Actions\CheckPageLoad.rxrec">
       <BoundTo>894c81d9-5a51-4815-87c0-3ea13c3526ca</BoundTo>
