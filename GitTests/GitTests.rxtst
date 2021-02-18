@@ -2,6 +2,10 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="09584853-40d4-458e-8d9c-29548cd86fd0"
+			name="TestCase_02">
+			</testcase>
 			<testmodule
 			id="22b7de66-feda-4c15-b587-20b6dd8230a9"
 			name="CheckPageLoad"
@@ -78,7 +82,7 @@
 			</testsuite>
 			<testcase
 			id="d56ff56d-4c2d-45b9-ad3a-cc8c883b1630"
-			name="TestCase">
+			name="TestCase_01">
 			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -90,7 +94,7 @@
 				name="GitTests">
 					<testcase
 					id="d56ff56d-4c2d-45b9-ad3a-cc8c883b1630"
-					name="TestCase">
+					name="TestCase_01">
 						<setup
 						id="8f7fd654-8d28-4e3e-bd8c-6f22a9eedbb8"
 						name="setup">
@@ -128,6 +132,10 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="09584853-40d4-458e-8d9c-29548cd86fd0"
+					name="TestCase_02">
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -138,6 +146,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="09584853-40d4-458e-8d9c-29548cd86fd0">
+			</testcontainer>
 			<testcontainer
 			id="3da99521-3036-4059-87fa-c4d9096ad600">
 			</testcontainer>
