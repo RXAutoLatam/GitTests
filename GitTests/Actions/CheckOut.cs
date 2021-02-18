@@ -26,7 +26,7 @@ namespace GitTests.Actions
     /// <summary>
     ///The CheckOut recording.
     /// </summary>
-    [TestModule("ba284c26-30ba-4ea1-82e4-7d88229ff31a", ModuleType.Recording, 1)]
+    [TestModule("9efd1454-2938-4dbc-8a22-943c04cc03c6", ModuleType.Recording, 1)]
     public partial class CheckOut : ITestModule
     {
         /// <summary>
