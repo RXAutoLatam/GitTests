@@ -79,8 +79,8 @@ namespace GitTests.GeneralScripts
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://demo.opencart.com/' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("https://demo.opencart.com/", "chrome", "", false, false, false, true, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://demo.opencart.com/' with browser 'chrome' in normal mode (with arguments --start-maximized).", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("https://demo.opencart.com/", "chrome", "--start-maximized", false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
         }
