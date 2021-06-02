@@ -34,6 +34,24 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b812398f-005a-4da8-a1cb-7a44e13f7b01"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2288231b-5d59-4420-a9ea-b2fdc1ebe127"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='demo.opencart.com']//div[#'content']//a[@innertext='MacBook']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

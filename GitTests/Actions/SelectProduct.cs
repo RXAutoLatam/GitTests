@@ -82,11 +82,14 @@ namespace GitTests.Actions
             // ===== Navigation =====
             Report.Log(ReportLevel.Info, "Section", "===== Navigation =====", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Content.lnk_MacBook' at 22;12.", repo.ApplicationUnderTest.Content.lnk_MacBookInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ApplicationUnderTest.Content.lnk_MacBook'", repo.ApplicationUnderTest.Content.lnk_MacBookInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Content.lnk_MacBookInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Content.lnk_MacBook' at 22;12.", repo.ApplicationUnderTest.Content.lnk_MacBookInfo, new RecordItemIndex(2));
             repo.ApplicationUnderTest.Content.lnk_MacBook.Click("22;12");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='$602.00') on item 'ApplicationUnderTest.Content.lbl_Precio'.", repo.ApplicationUnderTest.Content.lbl_PrecioInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='$602.00') on item 'ApplicationUnderTest.Content.lbl_Precio'.", repo.ApplicationUnderTest.Content.lbl_PrecioInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Content.lbl_PrecioInfo, "InnerText", "$602.00");
             Delay.Milliseconds(100);
             
